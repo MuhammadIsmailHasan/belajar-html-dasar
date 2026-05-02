@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        header {
+            background-color: grey;
+            padding: 40px;
+            text-align: center;
+            font-size: 4vw;
+            color: white;
+            text-shadow: 0vh 0vh 10px black;
+        }
+
+        nav {
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        nav li a:hover {
+            background-color: green;
+        }
+
+        #profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #profile picture {
+            padding: 10px;
+            background-color: red;
+            flex: 0 0 30vw;
+        }
+
+        #profile img {
+            border-radius: 90%;
+            width: 100%;
+            height: auto;
+        }
+
+        #profile article {
+            padding: 10px;
+            background-color: aqua;
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 4vw;
+            background-color: orange;
+        }
+
+        #profile p {
+            font-size: 2vw;
+            background-color: lightblue;
+        }
+
+        #profile ul {
+            font-size: 2vw;
+            background-color: lightgreen;
+        }
+
+        #profile pre {
+            font-size: 1.5vw;
+            background-color: lightgray;
+        }
+
+        #contact p {
+            font-size: 2vw;
+            background-color: lime;
+        }
+
+        #contact img {
+            width: 2.5vw;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        #contact a {
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            cursor: pointer;
+        }
+
+        #portofolio video {
+            width: 100%;
+            height: auto;
+        }
+
+        #social-media article {
+            font-size: 2vw;
+        }
+
+        #social-media ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color: lightpink;
+        }
+
+        #social-media li {
+            float: left;
+        }
+
+        #social-media li a {
+            text-decoration: none;
+            padding: 30px;
+            margin: 50px;
+        }
+        
+        #social-media li a:hover {
+            background-color: lightcoral;
+        }
+
+        footer {
+            background-color: grey;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 2.5vw;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+        <p>This is a simple profile page.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profile">My Profile</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+        </ul>
+    </nav>
+
+    <section id="profile">
+        <picture>
+            <source media="(max-width: 600px)" srcset="foto.jpg">
+            <img src="asset/foto.jpg" alt="My Photo">
+        </picture>
+
+        <article>
+            <h2>Muhammad Ismail Hasan</h2>
+            <p>I'm a student at Universitas Islam Malang, majoring in Law. I have a passion for technology and programming, and I'm always eager to learn new things in the field of computer science.</p> 
+            <ul>
+                <li>Programming Languages: Java, Python, JavaScript</li>
+                <li>Web Development: HTML, CSS, React</li>
+                <li>Database Management: MySQL, MongoDB</li>
+            </ul>
+            <pre>
+Public static void main(String[] args) {
+    System.out.println("Hello, World!");
+}
+            </pre>
+        </article>
+    </section>
+
+    <section id="contact">
+        <article>
+            <h2>Contact Information</h2>
+            <p><span><img src="asset/email.png" alt="icon email"></span> Email: <a href="mailto:ismailhas22@gmail.com">ismailhas22@gmail.com</a>
+            <p><span><img src="asset/github.png" alt="icon github"></span> Github: <a href="https://github.com/MuhammadIsmailHasan">Muhammad Ismail Hasan</a></p>
+        </article>
+    </section>
+
+    <section id="portofolio">
+        <h2>My Portofolio</h2>
+        <video controls>
+            <source src="asset/porto.mp4">
+        </video>
+    </section>
+
+    <section id="social-media">
+        <article>
+            <h2>My Social Media</h2>
+            <p>Follow me on social media for more updates!</p>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; <time datetime="2026"></time> My Profile. All rights reserved.</p>
+    </footer>
+</body>
+</html>
